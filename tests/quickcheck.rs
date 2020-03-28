@@ -10,6 +10,8 @@ extern crate num_integer;
 #[macro_use]
 extern crate quickcheck;
 
+extern crate rand;
+
 extern crate ramp;
 
 #[cfg(feature="rust-gmp")]
@@ -27,6 +29,7 @@ use num_traits::sign::Signed;
 use ramp::Int;
 use ramp::traits::DivRem;
 
+use rand::Rng;
 use quickcheck::{Gen, Arbitrary, TestResult};
 use std::fmt::Write;
 
